@@ -48,11 +48,16 @@
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  font-variation-settings:inherit
+  font-variation-settings: inherit;
+  margin-inline: 30px;
+  padding-bottom: 10px;
 }
 
-.arrow__comienzos {
-  padding: 12px 10px;
+.arrow__comienzos,
+.arrow__footer {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background: white;
   border-radius: 50%;
 }
@@ -92,24 +97,35 @@
   font-size: larger;
   font-weight: 500;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .section__vuelta {
-  display: grid;
   background-color: #d9e4cc;
-  align-content: center;
-  justify-content: center;   /* no consigo hacer que se alineen en el centro*/
   font-family: "Roboto Slab", serif;
-  
+  display: grid;
+  justify-content: center;   /* no consigo hacer que se alineen en el centro*/
+  text-align: center;
+  padding-top: 15px;
 }  
 
+.divs__vuelta {
+  align-self: center;
+  padding-bottom: 15px;
+  font-weight: bold;
+  
+}
 
+.small_title_historias {
+  color: #626262;
+  font-weight: bold;
+
+}
 
 .backtoschool__image {
   width: 120px;
   height: 130px;
   border-radius: 50%;
-  
 }
 
 .button__empezar {
@@ -122,7 +138,8 @@
   border-radius: 30px;    /* hover? animación? */
   font-size: larger;
   font-weight: 500;
-  margin: 30px 0px;
+  justify-self: center;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -130,11 +147,26 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  column-gap: 10px;
+  padding: 30px;
+}
+
+.footer__menu,
+.footer__socials,
+.footer__copy{
+  padding-bottom: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.arrow__footer {
+  position: relative;
+  z-index: 999;
+  top: -50px;
+  box-shadow: 0px 7px 7px 2px rgba(49, 48, 48, 0.769);
 }
 
 ul {
     list-style-type: none;
+    
 }

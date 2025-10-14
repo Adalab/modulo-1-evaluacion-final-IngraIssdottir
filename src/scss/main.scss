@@ -6,13 +6,16 @@
 }
 
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  
 }
 
 .menu-hamb {
-  background-color: var(--moss-green);
   position: fixed;
   z-index: 999;
+  padding: 10px;
+  background-color: #6c933e
+  
 }
 
 .section__comienzos {
@@ -23,11 +26,115 @@
   background-image: url("../../images/cover.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: right; /* hay que investigar bien la posición. No queda centrada en todos los dispositivos */
   background-position-x: -630px;
   height: 100dvh;
-  border-bottom: solid black 2px;
-  width: 100dvw;
+  width: 100dvw; /*este seguramente no haga falta */
+  padding-top: 55dvh;
+  color: white;
+}
+
+.title__comienzos {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto; 
+  font-style: normal;
+  font-weight: light;
+  font-size: 5dvh;
+  margin-bottom: 10px;
+}
+
+.subtitle__comienzos {
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:inherit
+}
+
+.arrow__comienzos {
+  padding: 12px 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.section__historias {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 20px;
+  margin-top: 30px;
+  gap: 20px;
+
+}
+
+.small__title__historias {
+  font-family: "Roboto", sans-serif;
+  font-size:small;
+  color: #6c933e;
+}
+
+.big__title__historias {
+  font-family: "Roboto Slab", serif;
+}
+
+.text__historias {
+  color: #4a4a4a;
+  line-height: 25px; /* no consigo cambiar el tamaño de la fuente */
+}
+
+.button__compra {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: #6c933e;
+  border: #6c933e solid 2px;
+  width: 160px;
+  height: 45px;
+  border-radius: 30px;    /* hover? animación? */
+  font-size: larger;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.section__vuelta {
+  display: grid;
+  background-color: #d9e4cc;
+  align-content: center;
+  justify-content: center;   /* no consigo hacer que se alineen en el centro*/
+  font-family: "Roboto Slab", serif;
+  
+}  
+
+
+
+.backtoschool__image {
+  width: 120px;
+  height: 130px;
+  border-radius: 50%;
   
 }
 
+.button__empezar {
+  font-family: "Roboto", sans-serif;
+  background-color: #6c933e;
+  color: white;
+  width: 160px;
+  height: 45px;
+  border: none;
+  border-radius: 30px;    /* hover? animación? */
+  font-size: larger;
+  font-weight: 500;
+  margin: 30px 0px;
+}
+
+.footer {
+  background-color: #4a4a4a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
